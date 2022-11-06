@@ -1,0 +1,101 @@
+.techs {
+  padding: 65px 0px 80px 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.headingSecondary {
+  margin-bottom: 8px;
+
+  text-transform: uppercase;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  color: #0057FC;
+}
+
+.modernHeader {
+  justify-content: center;
+  text-align: center;
+}
+
+.wrapperTechs {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 60px;
+}
+
+// Widget
+.widget {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.widget .icon {
+  width: 50px;
+  height: 50px;
+}
+
+.widget .icon img {
+  width: 100%;
+}
+
+.widget .iconContent {
+  margin-left: 10px;
+}
+
+.widget .iconContent .headingWrap {}
+
+.widget .iconContent .headingWrap h4 {}
+
+
+.center {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  width: 500px;
+  height: 500px;
+
+  background: var(--orange_60);
+  border-radius: 50%;
+  position: center;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imgTechs {
+  width: 269px;
+  height: 554px;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.imgLogin {
+  margin-right: 15%;
+}
+
+.imgTechs img {
+  width: 100%;
+}
+
+.imgDashboard {
+  margin-left: 40%;
+}
+
+.imgLogin {
+  margin-right: 40%;
+}
