@@ -2,7 +2,12 @@ import { NextPage } from "next";
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import styles from '@/styles/sections/Slides.module.scss';
+import { FreeMode, Pagination } from "swiper";
 
+
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
 
 const selideImg = [
   {
@@ -58,19 +63,30 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 const Slides: NextPage = () => {
   return (
     <section id="slides" className={styles.slides}>
+
       <div className="container">
-        <div className="column">
+        <div className={`column ${styles.custom}`}>
+          <div className="heading-secondary-wrap">
+            <h2>Telas</h2>
+          </div>
 
           <Swiper
             spaceBetween={50}
             slidesPerView={4}
+            pagination={{
+              clickable: true,
+              modifierClass: 'swiperPaginationCustom'
+            }}
+            freeMode={true}
+            modules={[FreeMode, Pagination]}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
+
           >
 
             {selideImg.map(slide => (
               <SwiperSlide key={slide.id}>
-                <div className="img">
+                <div className={styles.slideimg}>
                   <img src={`/mockups/slider/${slide.path}`} alt={`${slide.name}-screen`} width="270px" />
                 </div>
               </SwiperSlide>

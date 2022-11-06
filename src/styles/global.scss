@@ -90,6 +90,8 @@
 body {
   background: var(--default);
   color: var(--black);
+  padding: 30px;
+
 }
 
 body,
@@ -162,4 +164,44 @@ h6 {
 
 .column {
   width: 100%;
+}
+
+.swiperPaginationCustombullets {
+  bottom: 100px;
+  width: 100%;
+}
+
+.swiperPaginationCustombullets .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #000;
+  opacity: 1;
+  background: transparent;
+}
+
+.swiperPaginationCustombullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  border-color: var(--orange_60);
+  background: var(--orange_60);
+
+}
+
+.swiperPaginationCustombullets .swiper-pagination-bullet+.swiper-pagination-bullet {
+  margin-left: 15px;
+}
+
+.swiper {
+  height: 100%;
+}
+
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.heading-secondary-wrap {
+  width: 100%;
+  text-align: center;
 }
