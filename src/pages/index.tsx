@@ -5,6 +5,8 @@ import Techs from '@/sections/Techs';
 
 import styles from '@/styles/pages/Home.module.scss';
 import 'swiper/css';
+import CratedBy from '@/sections/CreatedBy';
+import HowToWork from '@/sections/HowToWork';
 
 
 const Home: NextPage = () => {
@@ -12,7 +14,8 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <div className={styles.row}>
         <Techs />
-        <Slides />
+        {/* <Slides /> */}
+        <HowToWork />
       </div>
     </div>
   )

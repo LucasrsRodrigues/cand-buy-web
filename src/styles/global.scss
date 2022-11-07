@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  transition: all ease .2s;
 }
 
 :root {
@@ -90,8 +92,6 @@
 body {
   background: var(--default);
   color: var(--black);
-  padding: 30px;
-
 }
 
 body,

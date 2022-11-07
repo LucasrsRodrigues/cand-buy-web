@@ -1,0 +1,48 @@
+.howtowork {
+  width: 100%;
+}
+
+.wrapperSteps {
+  display: flex;
+  background: cyan;
+  justify-content: space-between;
+}
+
+
+.boxStep {
+  width: 100%;
+  max-width: 260px;
+  text-align: center;
+
+  .numberStep {
+    font-size: 3.5rem;
+    color: var(--orange_60);
+    font-weight: 600;
+  }
+
+  .wrapperTexts {
+    .title {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .text {
+      font-size: 0.9rem;
+    }
+
+    .button {
+      border: none;
+      background: var(--orange_60);
+      padding: 10px;
+      border-radius: 9px;
+
+
+      color: #fff;
+      font-weight: 600;
+
+      &:hover {
+        filter: brightness(0.9);
+      }
+    }
+  }
+}
