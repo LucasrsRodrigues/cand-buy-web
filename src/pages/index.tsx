@@ -14,8 +14,8 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <div className={styles.row}>
         <Techs />
-        {/* <Slides /> */}
         <HowToWork />
+        <Slides />
       </div>
     </div>
   )

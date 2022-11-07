@@ -1,21 +1,12 @@
 import { NextPage } from "next";
 
 import styles from '@/styles/sections/Techs.module.scss';
+import SectionTitle from "components/SectionTitle";
 
 const Techs: NextPage = () => {
   return (
     <section id="techs" className={styles.techs}>
-      <div className={styles.modernHeader}>
-        <div className="heading-secondary-wrap">
-          <h6 className={styles.headingSecondary}>Tecnologias usadas</h6>
-        </div>
-        <div className="heading-primary-wrap">
-          <h2 className="heading-primary elementor-heading-title">
-            Criação de aplicativos ótimos para indivíduos, <br />
-            startups e empresas
-          </h2>
-        </div>
-      </div>
+      <SectionTitle title="Tecnologias usadas" subtitle=" Criação de aplicativos ótimos para indivíduos,startups e empresas" />
 
       <div className={styles.wrapperTechs}>
         <div className={styles.left}>

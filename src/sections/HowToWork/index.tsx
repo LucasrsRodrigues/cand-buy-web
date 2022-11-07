@@ -51,7 +51,6 @@ const HowToWork: NextPage = () => {
           </div>
         </div>
       </div>
-
     </section>
   )
 };

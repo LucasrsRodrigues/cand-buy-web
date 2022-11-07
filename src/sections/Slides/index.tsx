@@ -59,16 +59,15 @@ const selideImg = [
 ];
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SectionTitle from "components/SectionTitle";
 
 const Slides: NextPage = () => {
   return (
     <section id="slides" className={styles.slides}>
-
+      <SectionTitle title="Telas" subtitle="" />
       <div className="container">
         <div className={`column ${styles.custom}`}>
-          <div className="heading-secondary-wrap">
-            <h2>Telas</h2>
-          </div>
+
 
           <Swiper
             spaceBetween={50}
@@ -79,9 +78,6 @@ const Slides: NextPage = () => {
             }}
             freeMode={true}
             modules={[FreeMode, Pagination]}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
-
           >
 
             {selideImg.map(slide => (
